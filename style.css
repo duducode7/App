@@ -2,7 +2,8 @@ body {
     background-color: #121212;
     margin: 30px;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    color: lightgray
+    color: lightgray;
+    box-sizing: border-box;
 }
 
 .flex {
@@ -78,18 +79,33 @@ body {
 }
 
 .botao {
-    max-width: 50px;
-    max-height: 50px;
-    height: auto;
-    width: auto;
-    margin-top: 30px;
     background-color: #282727;
     border-radius: 15px;
-    padding: 20px;
-    margin:10px;
 }
 
-.botoes {
-    max-width: 50px;
-    max-height: 50px;
+.btn-imagem {
+    width: 100%;
+    max-width: 55px;
+}
+
+.btn-imagem img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.btn-txt {
+    width: 100%;
+    max-width: 70px;
+}
+
+.btn-txt p {
+    text-align: center;
+    margin-top: 5px;
+}
+
+.flex-gap {
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 20px;
 }
